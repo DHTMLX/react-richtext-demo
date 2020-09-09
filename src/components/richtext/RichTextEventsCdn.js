@@ -49,25 +49,27 @@ class RichTextEventsCdn extends Component {
   render() {
     const isEmpty = this.state.isEmpty;
     return (
-      <div className="dhx-container_inner events">
-        <div className="dhx_sample-container__widget" id="richtext"></div>
-        <div className="dhx_sample-container__sidebar">
-          <div className="events-list--element" style={isEmpty ? {} : { display: "none" }}>
-            No events yet
-          </div>
-          <div className="events-list--element dhx_sample-event" style={isEmpty ? { display: "none" } : {}}>
-            {this.state.events.map(item => (
-              <p key={item.id}>
-                {item.name}: {item.value}
-              </p>
-            ))}
-          </div>
-        </div>
+      <div className="dhx-container_inner">
         <section className="dhx_sample-controls">
           <button className="dhx_sample-btn dhx_sample-btn--flat" onClick={() => this.clearAll()}>
             Clear events
           </button>
         </section>
+        <div className="dhx-events">
+          <div className="dhx_sample-container__widget" id="richtext"></div>
+          <div className="dhx_sample-container__sidebar">
+            <div className="events-list--element" style={isEmpty ? {} : { display: "none" }}>
+              No events yet
+            </div>
+            {this.state.events.map(item => (
+              <div key={item.id} className="events-list--element dhx_sample-event">
+                <p>
+                  {item.name}: {item.value}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
