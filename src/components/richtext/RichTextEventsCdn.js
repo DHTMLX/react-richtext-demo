@@ -55,13 +55,13 @@ class RichTextEventsCdn extends Component {
             Clear events
           </button>
         </section>
-        <div className="dhx-events">
+        <div className="dhx_container">
           <div className="dhx_sample-container__widget" id="richtext"></div>
           <div className="dhx_sample-container__sidebar">
             <div className="events-list--element" style={isEmpty ? {} : { display: "none" }}>
               No events yet
             </div>
-            {this.state.events.map(item => (
+            {this.state.events.reverse().map(item => (
               <div key={item.id} className="events-list--element dhx_sample-event">
                 <p>
                   {item.name}: {item.value}

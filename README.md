@@ -12,6 +12,17 @@
 - Run `npm run storybook` in the project directory
 - Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
+## Live demos
+
+- [Initialization](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--initialization)
+- [Events](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--events)
+- [Setting HTML content](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--setting-html-content)
+- [Getting content](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--getting-content)
+- [Text editor modes](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--text-editor-modes)
+- [Toolbar blocks](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--toolbar-blocks)
+- [Locale](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--locale)
+- [Get stats](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--get-stats)
+
 ## Useful links
 
 - [Online  documentation](https://docs.dhtmlx.com/richtext/index.html)
@@ -28,14 +39,3 @@ Read us on [Medium](https://medium.com/@dhtmlx) :newspaper:
 Follow us on [Twitter](https://twitter.com/dhtmlx) :feet:
 
 Like our page on [Facebook](https://www.facebook.com/dhtmlx/) :thumbsup:
-
-## Live demos
-
-- [Initialization](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--initialization)
-- [Events](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--events)
-- [Setting HTML content](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--setting-html-content)
-- [Getting content](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--getting-content)
-- [Text editor modes](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--text-editor-modes)
-- [Toolbar blocks](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--toolbar-blocks)
-- [Locale](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--locale)
-- [Get stats](https://dhtmlx.github.io/react-richtext-demo/?path=/story/richtext--get-stats)

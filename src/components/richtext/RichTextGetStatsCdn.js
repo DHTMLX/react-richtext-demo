@@ -40,9 +40,9 @@ class RichTextGetStatsCdn extends Component {
             Get Statistics
           </button>
         </section>
-        <div className="dhx-container_setting">
-          <div className="dhx_sample-container__widget setting" id="richtext"></div>
-          <div className="dhx_sample-container__sidebar setting">
+        <div className="dhx_container">
+          <div className="dhx_sample-container__widget" id="richtext"></div>
+          <div className="dhx_sample-container__sidebar">
             <ul>
               <li>
                 Characters: <span>{this.state.characters}</span>

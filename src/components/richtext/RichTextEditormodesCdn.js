@@ -29,26 +29,16 @@ class RichTextEditormodesCdn extends Component {
     return (
       <div className="dhx-container_inner">
         <section className="dhx_sample-controls">
-          <div className="dhx_sample-input__wrapper dhx_sample-input__wrapper--pl-16">
-            <input
-              defaultChecked={true}
-              name="mode"
-              onChange={() => this.handleChange("classic")}
-              type="radio"
-              className="dhx_sample-radio__input"
-            />
-            <label className="dhx_sample-radio__label">Classic mode</label>
-          </div>
-          <div className="dhx_sample-input__wrapper dhx_sample-input__wrapper--pl-16">
-            <input
-              defaultChecked={false}
-              name="mode"
-              onChange={() => this.handleChange("document")}
-              type="radio"
-              className="dhx_sample-radio__input"
-            />
-            <label className="dhx_sample-radio__label">Document mode</label>
-          </div>
+          <label className="dhx_form-group dhx_radiobutton dhx_form-group--inline dhx_form-group--no-message-holder dhx_sample-input__wrapper--pl-16">
+            <input type="radio" name="mode" className="dhx_radiobutton__input" onChange={() => this.handleChange("classic")} defaultChecked={true}/>
+            <span className="dhx_radiobutton__visual-input"></span>
+            <span className="dhx_label">Classic mode</span>
+          </label>
+          <label className="dhx_form-group dhx_radiobutton dhx_form-group--inline dhx_form-group--no-message-holder dhx_sample-input__wrapper--pl-16">
+            <input type="radio" name="mode" className="dhx_radiobutton__input" onChange={() => this.handleChange("document")} defaultChecked={false} />
+            <span className="dhx_radiobutton__visual-input"></span>
+            <span className="dhx_label">Document mode</span>
+          </label>
         </section>
         <div className="dhx_sample-container__widget" id="richtext"></div>
       </div>

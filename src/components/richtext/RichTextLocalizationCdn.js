@@ -104,28 +104,16 @@ class RichTextLocalizationCdn extends Component {
     return (
       <div className="dhx-container_inner">
         <section className="dhx_sample-controls">
-          <div className="dhx_sample-input__wrapper dhx_sample-input__wrapper--pl-16">
-            <input
-              defaultChecked={true}
-              name="locale"
-              id="en"
-              onChange={() => this.handleChange("en")}
-              type="radio"
-              className="dhx_sample-radio__input"
-            />
-            <label className="dhx_sample-radio__label">English</label>
-          </div>
-          <div className="dhx_sample-input__wrapper dhx_sample-input__wrapper--pl-16">
-            <input
-              defaultChecked={false}
-              name="locale"
-              id="de"
-              onChange={() => this.handleChange("de")}
-              type="radio"
-              className="dhx_sample-radio__input"
-            />
-            <label className="dhx_sample-radio__label">Deutsch</label>
-          </div>
+          <label className="dhx_form-group dhx_radiobutton dhx_form-group--inline dhx_form-group--no-message-holder dhx_sample-input__wrapper--pl-16">
+            <input type="radio" name="locale" className="dhx_radiobutton__input" onChange={() => this.handleChange("en")} defaultChecked={true}/>
+            <span className="dhx_radiobutton__visual-input"></span>
+            <span className="dhx_label">English</span>
+          </label>
+          <label className="dhx_form-group dhx_radiobutton dhx_form-group--inline dhx_form-group--no-message-holder dhx_sample-input__wrapper--pl-16">
+            <input type="radio" name="locale" className="dhx_radiobutton__input" onChange={() => this.handleChange("de")} defaultChecked={false} />
+            <span className="dhx_radiobutton__visual-input"></span>
+            <span className="dhx_label">Deutsch</span>
+          </label>
         </section>
         <div className="dhx_sample-container__widget" id="richtext"></div>
       </div>

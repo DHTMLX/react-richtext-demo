@@ -46,16 +46,14 @@ class RichTextGettingContentCdn extends Component {
             Serialize Plain Text
           </button>
         </section>
-        <div className="dhx-container_setting">
-          <div className="dhx_sample-container__widget setting" id="richtext"></div>
-          <div className="dhx_sample-container__sidebar setting">
-            <textarea
-              className="dhx_sample-textarea"
-              placeholder="The result will be here:"
-              value={this.state.value}
-              readOnly={true}
-            ></textarea>
-          </div>
+        <div className="dhx_container">
+          <div className="dhx_sample-container__widget" id="richtext"></div>
+          <textarea
+            className="dhx_sample-container__textarea"
+            placeholder="The result will be here:"
+            value={this.state.value}
+            readOnly={true}
+          ></textarea>
         </div>
       </div>
     );

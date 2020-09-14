@@ -52,11 +52,9 @@ class RichTextSettingHTMLContentCdn extends Component {
             Set HTML Value
           </button>
         </section>
-        <div className="dhx-container_setting">
-          <div className="dhx_sample-container__widget setting" id="richtext"></div>
-          <div className="dhx_sample-container__sidebar setting">
-            <textarea placeholder="Paste here HTML" className="dhx_textarea" value={this.state.value} readOnly={true}></textarea>
-          </div>
+        <div className="dhx_container">
+          <div className="dhx_sample-container__widget" id="richtext"></div>
+          <textarea className="dhx_sample-container__textarea" placeholder="Paste here HTML" value={this.state.value} readOnly={true}></textarea>
         </div>
       </div>
     );
