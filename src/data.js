@@ -1,0 +1,3 @@
+export function getData() {
+  return "# Meet DHTMLX Rich Text Editor! \nThis JavaScript rich text editor is highly customizable. It makes text editing quick and comfortable due to the inbuilt set of handy formatting tools. \nBesides, it will convert your text into HTML or Markdown in the blink of an eye. Another bonus of DHTMLX Rich Text is its flexible configuration settings which allow you to fine-tune the look and feel of the editor without effort. \nTo learn more, read our [documentation](https://docs.dhtmlx.com/richtext/index.html) and check the [samples](https://snippet.dhtmlx.com/57v7n2kp?tag=richtext).";
+}
