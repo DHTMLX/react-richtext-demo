@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 import { Richtext } from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.min.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 
 export default function RichTextComponent(props) {
   let richtext_container = useRef();
 
-  const baseURL = "https://master--richtext-go--dev.webix.io";
+  const baseURL = "https://docs.dhtmlx.com/richtext-backend";
   const imageUploadUrl = `${baseURL}/images`;
 
   useEffect(() => {

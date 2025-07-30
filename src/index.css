@@ -7,13 +7,13 @@ body,
   margin: 0;
 }
 
-/* specify styles for Kanban and Toolbar container*/
+/* specify styles for RichText container*/
 .component_container {
-  height: 100%; 
+  height: 100%;
   margin: 0 auto;
 }
 
-/* specify styles for Kanban container*/
+/* specify styles for RichText container*/
 .widget {
-    height: calc(100% - 56px);
+  height: calc(100% - 56px);
 }
