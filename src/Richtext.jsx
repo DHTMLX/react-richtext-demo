@@ -1,23 +1,28 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Richtext } from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.min.css";
-import { getData } from "./data";
+import "@dhx/trial-richtext/dist/richtext.css";
 
-export default function RichtextView(props) {
-  let [richtext, setRichtext] = useState();
-  let container = useRef();
+export default function RichTextComponent(props) {
+  let richtext_container = useRef();
+
+  const baseURL = "https://docs.dhtmlx.com/richtext-backend";
+  const imageUploadUrl = `${baseURL}/images`;
 
   useEffect(() => {
-    const richtext = new Richtext(container.current, {});
-    setRichtext(richtext);
+    const editor = new Richtext(richtext_container.current, {
+      value: props.value,
+      imageUploadUrl,
+      menubar: true
+    });
 
-    return () => richtext.destructor();
+    return () => {
+      editor.destructor();
+    };
   }, []);
 
-  useEffect(() => {
-    if (!richtext) return;
-    richtext.setValue(props.initText, "markdown");
-  }, [richtext, props.initText]);
-
-  return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
+  return (
+    <div className="component_container">
+      <div ref={richtext_container} className="widget"></div>
+    </div>
+  );
 }

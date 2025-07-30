@@ -2,7 +2,15 @@
 
 [![dhtmlx.com](https://img.shields.io/badge/made%20by-DHTMLX-blue)](https://dhtmlx.com/)
 
+![DHTMLX RichText with React Demo](richtext.png)
+
 ## How to start
+
+### Online
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DHTMLX/react-richtext-demo)
+
+### On the local host
 
 Clone the repository or download files.
 
@@ -18,11 +26,9 @@ npm install
 npm run start
 ```
 
-You can also use [GitHub Codespaces](https://docs.github.com/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository) to run online.
-
 ## Useful links
 
-- [More demos about the DHTMLX Richtext functionality](https://snippet.dhtmlx.com/807qbp9v?tag=richtext&mode=wide)
+- [More demos about the DHTMLX Richtext functionality](https://snippet.dhtmlx.com/a21ea4jb?tag=richtext&mode=wide)
 - [Technical support ](https://forum.dhtmlx.com/c/richtext)
 - [Online  documentation](https://docs.dhtmlx.com/richtext/)
 
