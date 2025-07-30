@@ -26,8 +26,6 @@ npm install
 npm run start
 ```
 
-You can also use [GitHub Codespaces](https://docs.github.com/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository) to run online.
-
 ## Useful links
 
 - [More demos about the DHTMLX Richtext functionality](https://snippet.dhtmlx.com/a21ea4jb?tag=richtext&mode=wide)
